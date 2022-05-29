@@ -1,0 +1,5 @@
+什么时候回滚事务
+    1、抛出运行期异常(RuntimeException)
+        运行期产生异常，事务可以回滚
+    2、小心不当的try-catch
+        spring是感知不到你用try-catch包裹起来的异常，所以默认commit
